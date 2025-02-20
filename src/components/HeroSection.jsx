@@ -14,7 +14,7 @@ const HeroSection = () => {
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-transparent to-gray-100/50" />
       
-      <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between w-full px-4 md:px-12 py-12 lg:py-8">
+      <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center xl:-mt-8 justify-between w-full px-4 md:px-12 py-12 lg:py-8">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,14 +22,14 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative flex-1 space-y-8 -mt-8 text-center lg:text-left lg:pr-12"
         >
-          <motion.div
+          {/* <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
             className="bg-yellow-300 shadow-lg z-[999] absolute -top-2 md:-top-12 left-8 md:left-20 w-14 h-14 rounded-full flex items-center justify-center mx-auto lg:mx-0"
           >
             <span className="text-2xl font-bold">A</span>
-          </motion.div>
+          </motion.div> */}
 
           <h1 className="text-4xl md:text-6xl font-bold text-black leading-tight tracking-tight">
             Your Food,
