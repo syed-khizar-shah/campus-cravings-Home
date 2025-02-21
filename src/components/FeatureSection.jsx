@@ -36,7 +36,7 @@ const FeatureSection = () => {
   );
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-24 overflow-hidden">
+    <div className="max-w-7xl mx-auto px-6 py-24 overflow-hidden">
       <motion.div
         className="space-y-40"
         variants={containerVariants}

@@ -15,7 +15,7 @@ const DownloadCTA = () => {
   return (
     <div className="px-4 py-16">
       <motion.div
-        className="relative bg-[#FB3333] rounded-[24px] p-16 mx-auto max-w-6xl"
+        className="relative bg-[#FB3333] rounded-[24px] p-16 mx-auto max-w-7xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

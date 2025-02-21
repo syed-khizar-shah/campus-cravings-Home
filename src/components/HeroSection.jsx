@@ -10,7 +10,7 @@ import { FaApple } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen overflow-hidden bg-[#F3F4FB] relative">
+    <div className="min-h-screen overflow-hidden bg-[#F3F4FB] relative md:pt-28 xl:pt-0">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-transparent to-gray-100/50" />
 
@@ -79,7 +79,7 @@ const HeroSection = () => {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.8 }}
-              className="absolute top-16 md:top-32 left-16 md:left-36 z-0"
+              className="absolute top-16 md:top-32 left-16 md:left-36 lg:left-16 xl:left-36 z-0"
             >
               <img
                 src={fries}
