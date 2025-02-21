@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
-import iphone from "../assets/Images/iPhone 14 Pro.png";
-import emojis from "../assets/Images/image 1.png";
-import clock from "../assets/Images/10.png";
-import img1 from "../assets/Images/9.png";
-import img2 from "../assets/Images/11.png";
-import img3 from "../assets/Images/12.png";
-import img4 from "../assets/Images/13.png";
-import img14 from "../assets/Images/14.png";
-import pencil from "../assets/Images/pencil.png";
+import iphone from "../assets/Images/grid-phone.png";
+import emojis from "../assets/Images/grid-emojis.png";
+import clock from "../assets/Images/grid-clock.png";
+import img1 from "../assets/Images/grid-template.png";
+import img2 from "../assets/Images/grid-ring.png";
+import img3 from "../assets/Images/grid-lock.png";
+import img4 from "../assets/Images/grid-people.png";
+import img14 from "../assets/Images/grid-qr.png";
+import pencil from "../assets/Images/grid-pencil.png";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -93,7 +93,7 @@ const FeaturesGrid = () => {
                     <motion.img
                       src={img2}
                       alt="Celebration icon"
-                      className="h-auto w-[100px] md:w-auto mx-auto md:mx-0"
+                      className="h-[120px] w-[100px] md:w-auto mx-auto md:mx-0"
                       whileHover={{ scale: 1.05 }}
                     />
                   </div>

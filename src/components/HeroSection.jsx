@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import iphone from "../assets/Images/iPhone 13.png";
-import coffee_cup from "../assets/Images/coffee cup.png";
+import iphone from "../assets/Images/hero-phone.png";
+import coffee_cup from "../assets/Images/hero-coffee.png";
 import rectangle from "../assets/Images/Rectangle.png";
-import { SquarePlus } from "lucide-react";
+import { RiAddBoxFill } from "react-icons/ri";
 import fries from "../assets/Images/1 51.png";
 import { FaAndroid } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
@@ -13,7 +13,7 @@ const HeroSection = () => {
     <div className="min-h-screen overflow-hidden bg-[#F3F4FB] relative">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-transparent to-gray-100/50" />
-      
+
       <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center xl:-mt-8 justify-between w-full px-4 md:px-12 py-12 lg:py-8">
         {/* Left Content */}
         <motion.div
@@ -40,11 +40,12 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-gray-600 text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            Campus Cravings connects students through peer-to-peer deliveries, fostering community with secure, convenient service.
+            Campus Cravings connects students through peer-to-peer deliveries,
+            fostering community with secure, convenient service.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="flex items-center justify-center gap-2 bg-white text-black px-8 py-3 rounded-full hover:bg-gray-50 transition-colors duration-300 shadow-md"
@@ -52,13 +53,15 @@ const HeroSection = () => {
               <FaApple />
               <span className="text-base font-medium">Download for iOS</span>
             </motion.button>
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="flex items-center justify-center gap-2 bg-white text-black px-8 py-3 rounded-full hover:bg-gray-50 transition-colors duration-300 shadow-md"
             >
-              <FaAndroid className="text-green-600"/>
-              <span className="text-base font-medium">Download for Android</span>
+              <FaAndroid className="text-green-600" />
+              <span className="text-base font-medium">
+                Download for Android
+              </span>
             </motion.button>
           </div>
         </motion.div>
@@ -78,7 +81,11 @@ const HeroSection = () => {
               transition={{ delay: 0.8 }}
               className="absolute top-16 md:top-32 left-16 md:left-36 z-0"
             >
-              <img src={fries} alt="fries" className="w-[180px] h-[180px] opacity-90" />
+              <img
+                src={fries}
+                alt="fries"
+                className="w-[180px] h-[180px] opacity-90"
+              />
             </motion.div>
 
             {/* Phone Frame */}
@@ -88,10 +95,10 @@ const HeroSection = () => {
               transition={{ duration: 1, type: "spring", stiffness: 100 }}
               className="relative z-10 w-full"
             >
-              <img 
-                src={iphone} 
-                alt="Food delivery app interface" 
-                className="w-full h-auto max-w-[580px]" 
+              <img
+                src={iphone}
+                alt="Food delivery app interface"
+                className="w-full h-auto max-w-[580px]"
               />
             </motion.div>
 
@@ -102,12 +109,16 @@ const HeroSection = () => {
               transition={{ delay: 0.6 }}
               className="absolute -top-2 left-16 md:left-40 z-20 bg-white rounded-xl p-3 shadow-xl flex items-center gap-3"
             >
-              <img src={rectangle} alt="Espresso" className="w-12 h-12 rounded-lg object-cover" />
+              <img
+                src={rectangle}
+                alt="Espresso"
+                className="w-12 h-12 rounded-lg object-cover"
+              />
               <div>
                 <p className="font-semibold">Espresso</p>
                 <p className="text-sm text-gray-600">$2.50</p>
               </div>
-              <SquarePlus className="h-5 w-5 cursor-pointer" />
+              <RiAddBoxFill className="h-5 w-5" />
             </motion.div>
 
             {/* Coffee Cups */}
@@ -117,11 +128,7 @@ const HeroSection = () => {
               transition={{ delay: 0.8 }}
               className="absolute -bottom-8 -right-4 z-20"
             >
-              <img 
-                src={coffee_cup} 
-                alt="Coffee cups"
-                className="w-52 h-52" 
-              />
+              <img src={coffee_cup} alt="Coffee cups" className="w-52 h-52" />
             </motion.div>
           </div>
         </motion.div>

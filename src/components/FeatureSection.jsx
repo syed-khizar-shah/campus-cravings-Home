@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import iphone1 from "../assets/Images/iPhone 14 Pro (1).png";
-import iphone2 from "../assets/Images/iPhone 14 Pro (2).png";
-import iphone3 from "../assets/Images/iPhone 14 Pro (3).png";
+import iphone1 from "../assets/Images/phone1.png";
+import iphone2 from "../assets/Images/phone2.png";
+import iphone3 from "../assets/Images/phone3.png";
 
 const FeatureSection = () => {
   const containerVariants = {
@@ -26,14 +26,12 @@ const FeatureSection = () => {
           backgroundColor: bgColor,
           borderRadius: "48px",
           position: "absolute",
-          left: "calc(50% - 200px)",  // Half of width
-          top: "calc(50% - 100px)",   // Half of height
+          left: "calc(50% - 200px)", // Half of width
+          top: "calc(50% - 100px)", // Half of height
           zIndex: -1,
         }}
       />
-      <div className="relative z-10">
-        {children}
-      </div>
+      <div className="relative z-10">{children}</div>
     </div>
   );
 
