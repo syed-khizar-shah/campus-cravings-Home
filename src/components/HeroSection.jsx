@@ -17,9 +17,9 @@ const HeroSection = () => {
       <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center xl:-mt-8 justify-between w-full px-4 md:px-12 py-12 lg:py-8">
         {/* Left Content */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          // initial={{ opacity: 0, y: 20 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative flex-1 space-y-8 -mt-8 text-center lg:text-left lg:pr-12"
         >
           {/* <motion.div
@@ -68,17 +68,17 @@ const HeroSection = () => {
 
         {/* Right Content - Phone Mockup */}
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          // initial={{ opacity: 0, x: 100 }}
+          // animate={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 1 }}
           className="flex-1 relative flex justify-center lg:justify-end mt-12 lg:mt-0"
         >
           <div className="relative w-full max-w-[600px]">
             {/* Fries in background */}
             <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.8 }}
+              // initial={{ scale: 0 }}
+              // animate={{ scale: 1 }}
+              // transition={{ delay: 0.8 }}
               className="absolute top-16 md:top-32 left-16 md:left-36 lg:left-16 xl:left-36 z-0"
             >
               <img
@@ -90,9 +90,9 @@ const HeroSection = () => {
 
             {/* Phone Frame */}
             <motion.div
-              initial={{ rotate: 0 }}
-              animate={{ rotate: 5 }}
-              transition={{ duration: 1, type: "spring", stiffness: 100 }}
+              // initial={{ rotate: 0 }}
+              // animate={{ rotate: 5 }}
+              // transition={{ duration: 1, type: "spring", stiffness: 100 }}
               className="relative z-10 w-full"
             >
               <img
@@ -104,9 +104,9 @@ const HeroSection = () => {
 
             {/* Floating Card */}
             <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.6 }}
+              // initial={{ y: 20, opacity: 0 }}
+              // animate={{ y: 0, opacity: 1 }}
+              // transition={{ delay: 0.6 }}
               className="absolute -top-2 left-16 md:left-40 z-20 bg-white rounded-xl p-3 shadow-xl flex items-center gap-3"
             >
               <img
@@ -123,9 +123,9 @@ const HeroSection = () => {
 
             {/* Coffee Cups */}
             <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.8 }}
+              // initial={{ scale: 0 }}
+              // animate={{ scale: 1 }}
+              // transition={{ delay: 0.8 }}
               className="absolute -bottom-8 -right-4 z-20"
             >
               <img src={coffee_cup} alt="Coffee cups" className="w-52 h-52" />

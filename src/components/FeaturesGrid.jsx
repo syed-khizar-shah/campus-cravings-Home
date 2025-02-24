@@ -28,22 +28,28 @@ const FeaturesGrid = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <motion.div
             variants={fadeInUp}
-            className="bg-[#C7DEFF] p-6 rounded-3xl"
+            className="bg-[#C7DEFF] p-6 pb-0 rounded-3xl"
           >
             <div className="flex flex-col sm:flex-row items-center sm:items-end justify-between h-full gap-6">
-              <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-                <img src={pencil} alt="pencil" className="h-6 mb-4"/>
-                <h2 className="text-xl sm:text-2xl font-bold mb-3">Delivered Anywhere</h2>
+              <div className="flex flex-col items-center pb-6 sm:items-start text-center sm:text-left">
+                <img src={pencil} alt="pencil" className="h-6 mb-4" />
+                <h2 className="text-xl sm:text-2xl font-bold mb-3">
+                  Delivered Anywhere
+                </h2>
                 <p className="text-black text-sm sm:text-base">
                   Get your favorite food delivered straight to your dorm,
                   classroom, or wherever you are.
                 </p>
               </div>
-              <motion.div 
-                whileHover={{ scale: 1.05 }} 
+              <motion.div
+                whileHover={{ scale: 1.05 }}
                 className="w-24 sm:w-28 lg:w-32 flex-shrink-0"
               >
-                <img src={iphone} alt="Mobile app screenshot" className="w-full h-auto" />
+                <img
+                  src={iphone}
+                  alt="Mobile app screenshot"
+                  className="w-full h-auto"
+                />
               </motion.div>
             </div>
           </motion.div>
@@ -60,7 +66,8 @@ const FeaturesGrid = () => {
                 whileHover={{ scale: 1.05 }}
               />
               <h2 className="text-xl sm:text-2xl font-bold text-center">
-                Student-to-Student<br className="hidden sm:block"/> Delivery
+                Student-to-Student
+                <br className="hidden sm:block" /> Delivery
               </h2>
             </div>
           </motion.div>
@@ -82,7 +89,9 @@ const FeaturesGrid = () => {
                     className="h-[170px] sm:h-32 w-auto mb-4"
                     whileHover={{ scale: 1.05 }}
                   />
-                  <h2 className="text-xl sm:text-2xl font-bold text-center">Track Your Orders</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold text-center">
+                    Track Your Orders
+                  </h2>
                 </div>
               </motion.div>
 
@@ -119,7 +128,8 @@ const FeaturesGrid = () => {
             >
               <div className="flex flex-col sm:flex-row items-center justify-between lg:justify-normal gap-6 lg:gap-16">
                 <h2 className="text-xl sm:text-2xl font-bold text-center sm:text-left">
-                  For Students<br/> By Students
+                  For Students
+                  <br /> By Students
                 </h2>
                 <motion.img
                   src={img4}
@@ -139,7 +149,8 @@ const FeaturesGrid = () => {
             >
               <div className="flex flex-col sm:flex-row lg:flex-col items-center justify-between gap-6">
                 <h2 className="text-xl sm:text-2xl font-bold text-center lg:text-left">
-                  Earn <br /> While You<br /> Deliver
+                  Earn <br /> While You
+                  <br /> Deliver
                 </h2>
                 <motion.img
                   src={img3}
