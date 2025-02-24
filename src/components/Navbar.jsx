@@ -89,9 +89,9 @@ const Navbar = () => {
           >
             <motion.div
               className="flex flex-col items-center py-6 px-4 space-y-6"
-              initial={{ y: -20 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.2, delay: 0.1 }}
+              // initial={{ y: -20 }}
+              // animate={{ y: 0 }}
+              // transition={{ duration: 0.2, delay: 0.1 }}
             >
               <button 
                 className="w-full text-center py-2 text-gray-700 hover:text-red-500 transition-colors duration-200"
